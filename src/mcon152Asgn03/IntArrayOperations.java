@@ -4,22 +4,36 @@ public class IntArrayOperations {
 	
 	public static int Sum(int[] x) {
 		 
-		return 0;
+		int sum = 0;
+		for(int i = 0; i < x.length; i++) {
+			sum += x[i];
+		}
+		return sum;
 	}
 	
 	public static int Max(int[] x) {
 		
-		return 0;
+		int max = x[0];
+		for(int i = 0; i < x.length; i++) {
+			if(x[i] > max)
+				max = x[i];
+		}
+		return max;
 	}
 	
 	public static int Min(int[] x) {
 		
-		return 0;
+		int min = x[0];
+		for(int i = 0; i < x.length; i++) {
+			if(x[i] < min)
+				min = x[i];
+		}
+		return min;
 	}
 	
 	public static int Range(int[] x) {
 		
-		return 0;
+		return Math.abs(Max(x) - Min(x) + 1);
 	}
 
 }

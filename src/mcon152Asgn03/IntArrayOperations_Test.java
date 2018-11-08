@@ -72,21 +72,21 @@ public class IntArrayOperations_Test {
 	public void ListOf789Returns3()
 	{
 		int[] arr = {7, 8, 9};
-		assertEquals(24, IntArrayOperations.Range(arr));
+		assertEquals(3, IntArrayOperations.Range(arr));
 	}
 	//tests the sum method if it returns the sum even if there are zeros
 	@Test
 	public void ListWithDuplicatesReturnsRange()
 	{
 		int[] arr = { 2, 2, 4, 3};
-		assertEquals(2, IntArrayOperations.Range(arr));
+		assertEquals(3, IntArrayOperations.Range(arr));
 	}
 	//tests the sum method if it returns the sum even if there are negatives
 	@Test
 	public void ListWithNegativesGivesRange()
 	{
 		int[] arr = { -3, -9, -12 };
-		assertEquals(-24, IntArrayOperations.Range(arr));
+		assertEquals(10, IntArrayOperations.Range(arr));
 	}
 	
 }
